@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RateLimiterConfig {
 
-	@Bean
-	KeyResolver keyResolver() {
-		return exchange -> exchange.getPrincipal()
-				.map(Principal::getName)
-				.defaultIfEmpty("anonymous");
-	}
+    @Bean
+    KeyResolver keyResolver() {
+        return exchange -> exchange.getPrincipal()
+                .map(Principal::getName)
+                .defaultIfEmpty("anonymous");
+    }
 
 }
