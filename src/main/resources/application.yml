@@ -24,24 +24,6 @@ spring:
         max-interval: 2000 # 2s
         multiplier: 1.1
     gateway:
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins:
-              - '*' # 허용하려는 도메인
-            allow-credentials: true # 요청 시 인증 정보를 전송하도록 허가
-            allowedHeaders:
-              - Authorization
-              - Authorization-refresh # 허용하려는 헤더
-              - Content-Type  # Content-Type을 추가해보세요
-              - X-Requested-With  # AJAX 요청을 위한 헤더
-            allowedMethods: # 허용하려는 HTTP 메서드
-              - PUT
-              - GET
-              - POST
-              - DELETE
-              - OPTIONS
-              - PATCH
       httpclient:
         connect-timeout: 2000 # 2s
         response-timeout: 5s
