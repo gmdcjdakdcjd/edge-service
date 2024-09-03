@@ -33,6 +33,8 @@ spring:
             allowedHeaders:
               - Authorization
               - Authorization-refresh # 허용하려는 헤더
+              - Content-Type  # Content-Type을 추가해보세요
+              - X-Requested-With  # AJAX 요청을 위한 헤더
             allowedMethods: # 허용하려는 HTTP 메서드
               - PUT
               - GET
