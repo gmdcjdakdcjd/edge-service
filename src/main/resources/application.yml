@@ -93,7 +93,7 @@ spring:
             scope: openid,roles
         provider:
           keycloak:
-            issuer-uri: http://a1ac45fb8469c4e908fa127aa8d0aeee-1889420468.ap-northeast-2.elb.amazonaws.com/realms/PolarBookshop
+            issuer-uri: http://k8s-default-keyingre-2b74abf3a5-681336859.ap-northeast-2.elb.amazonaws.com/realms/PolarBookshop
 #            issuer-uri: http://polar-keycloak:80/realms/PolarBookshop
 
 resilience4j:
